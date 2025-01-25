@@ -1,0 +1,11 @@
+#title_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Võid määrata ka kindla kõrguse, kui vaja */
+}
+
+#title_box img {
+    max-width: 100%; /* Et pilt ei ületaks konteineri piire */
+    height: auto;
+}
