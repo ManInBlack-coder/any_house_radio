@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, '')));
 
 // Serve the index.html file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/'));
+    res.sendFile(path.join(__dirname, './'));
 });
 
 // Log incoming requests to static files
