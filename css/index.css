@@ -50,10 +50,30 @@ footer {
 
 }
 
-.content h3 {
-    margin-bottom: 10px;
+.content p {
+    margin-bottom: 10%;
 }
 
+
+#tracks {
+    margin: 0 auto; /* Keskendab kogu #tracks konteineri horisontaalselt */
+    border: solid 2px white;
+    max-width: 80%; /* Seab maksimaalse laiuse */
+    text-align: center; /* Keskendab sees olevad elemendid */
+    padding: 5px;
+    margin-bottom: 10%;
+}
+
+
+
+.track {
+    justify-content: center;
+}  
+
+#eurlexa_header {
+    text-align: center;
+    margin-top: 15px;
+}
 
 #soundcloud-container {
     max-width: 100%;
@@ -64,10 +84,11 @@ footer {
 
 #soundcloud-container iframe {
     width: 100%;
-    max-width: 100%; /* Et iframe ei läheks laiemaks kui konteiner */
+    max-width: 90%; /* Et iframe ei läheks laiemaks kui konteiner */
     height: 166px;
     border: none;
     margin-bottom: 20px; /* Lisab rohkem vahet iframe ja järgmise elemendi vahel */
+
 }
 
 #soundcloud-info {
