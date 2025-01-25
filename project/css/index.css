@@ -4,6 +4,8 @@
     background-color: #000000;
     color: #fff;
     margin: 0;
+    margin-bottom: 100px; /* Lisab põhja tühikut, et sisu ei läheks footeriga kokku */
+
 }
 
 /* Navbar styles */
@@ -29,16 +31,18 @@ footer {
     background-color: #333;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Paigaldab footeri alati lehe alla */
+    bottom: 0; /* Asub ekraani alumises servas */
+    left: 0; /* Hoiab footeri vasakus servas */
+    width: 100%; /* Täidab kogu ekraani laiuselt */
+    color: #fff; /* Muudab teksti värvi heledamaks, et olla loetav */
+    z-index: 1000; /* Veendub, et footer oleks ülejäänud sisu kohal */
 }
 
 /* Main content */
 .content {
     padding: 20px;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .content h1 {
@@ -48,4 +52,39 @@ footer {
 
 .content h3 {
     margin-bottom: 10px;
+}
+
+
+#soundcloud-container {
+    max-width: 100%;
+    margin: 20px auto 40px auto; /* Ülemine ja alumine vaheline kaugus (40px alumisel) */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#soundcloud-container iframe {
+    width: 100%;
+    max-width: 100%; /* Et iframe ei läheks laiemaks kui konteiner */
+    height: 166px;
+    border: none;
+    margin-bottom: 20px; /* Lisab rohkem vahet iframe ja järgmise elemendi vahel */
+}
+
+#soundcloud-info {
+    font-size: 10px;
+    color: #cccccc;
+    word-break: break-word;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Garuda", "Verdana", "Tahoma", sans-serif;
+    font-weight: 100;
+}
+
+#soundcloud-info a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+#soundcloud-info a:hover {
+    color: #ff5500;
 }
