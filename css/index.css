@@ -26,6 +26,21 @@ nav a:hover {
     background-color: #555;
 }
 
+
+#quote {
+    text-align: center; /* Keskendab tsitaadi konteineri */
+    max-width: 60%; /* Piirab konteineri laiuse */
+    margin: 20px auto; /* Keskendab ja lisab ruumi ümber */
+    padding: 15px; /* Lisab sisemist ruumi */
+    color: #ffffff; /* Diskreetne hall värv */
+    font-family: "Georgia", serif; /* Lisab elegantse serif-stiili */
+    font-style: italic; /* Tsitaadi stiililisus */
+    border-radius: 8px; /* Ümarad nurgad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kerge vari konteinerile */
+}
+
+
+
 /* Footer styles */
 footer {
     background-color: #333;
@@ -55,6 +70,7 @@ footer {
 }
 
 
+
 #tracks {
     margin: 0 auto; /* Keskendab kogu #tracks konteineri horisontaalselt */
     border: solid 2px white;
@@ -62,6 +78,8 @@ footer {
     text-align: center; /* Keskendab sees olevad elemendid */
     padding: 5px;
     margin-bottom: 10%;
+    margin-top: 10%;
+
 }
 
 
