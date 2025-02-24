@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Markazi+Text:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+3D&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#Eurlexa_intro {
+    display: flex;
+    flex-direction: column; /* Paigutab elemendid vertikaalselt */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    border: solid 2px rgb(47, 47, 47);
+    background: linear-gradient(200deg, #000000, #032107, #210536, #000000);
+    margin-top: 10%;
+    border-radius: 30px;
+}
+
+#intro_div {
+    display: flex; /* Paigutab elemendid kõrvuti */
+    flex-direction: row; /* Pilt ja tekst kõrvuti */
+    gap: 20px; /* Lisab vahe */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+#intro_text {
+    font-family: "Doto", serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#intro_text h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#intro_text p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#eurlexa_img img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#follow_me {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#follow_me p {
+    margin-bottom: 10px; /* Lisab vahe paragrahvi ja nupudeni */
+}
+
+#follow_buttons {
+    display: flex; /* Paigutab nupud vertikaalselt */
+    justify-content: center;
+    margin-top: 20px; /* Lisab veidi vahe nupudelt ülespoole */
+    flex: row;
+}
+
+#follow_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #FF5500; /* SoundCloud's brand color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease, width 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px; /* Lisab vahe nupudesse */
+    flex-direction: row;
+    width: 80%; /* Ehk nuppude suurus laiem */
+    margin: 10px;
+        transition: background 0.3s ease, transform 0.3s ease, width 0.3s ease; /* Sujuvad üleminekud */
+
+
+
+}
+
+#follow_button_ig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #FF0080, #7928CA); /* Instagram's gradient color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease, width 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px; /* Lisab vahe nupudesse */
+    flex-direction: row;
+    width: 80%; /* Ehk nuppude suurus laiem */
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.3s ease, width 0.3s ease; /* Sujuvad üleminekud */
+
+
+}
+
+#follow_button:hover {
+    background: #FF3300; /* Tumedam oranž hoveril */
+    transform: scale(1.1); /* Väike suurendus hoveril */
+    width: 60%; /* Suurendab nuppu hoveri korral */
+}
+
+#follow_button_ig:hover {
+    background: linear-gradient(45deg, #FF4D94, #9B2AC0); /* Tumedam Instagrami gradient hoveril */
+    transform: scale(1.1); /* Väike suurendus hoveril */
+    width: 60%; /* Suurendab nuppu hoveri korral */
+}
+
+#follow_button img,
+#follow_button_ig img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
