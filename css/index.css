@@ -1,19 +1,49 @@
   /* Body and background */
+  @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Markazi+Text:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+3D&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+  
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      
+  }
+
   body {
     font-family: Arial, sans-serif;
     background-color: #000000;
     color: #fff;
     margin: 0;
-    margin-bottom: 100px; /* Lisab põhja tühikut, et sisu ei läheks footeriga kokku */
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Doto", serif, Regular;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    /*background: linear-gradient(170deg, #000000,#000000,  #062a10);*/
+
+
+
 
 }
 
+html {
+    scroll-behavior: smooth; /* Lisab sujuva kerimise */
+}
 /* Navbar styles */
 nav {
-    background-color: #333;
+    background-color: #000000;
     padding: 1rem;
     text-align: center;
-    position: relative;
+    position: flex;
+    margin-top: 10px;
+
     
 }
 nav a {
@@ -27,32 +57,46 @@ nav a:hover {
 }
 
 
+
+
+
+
+
 #quote {
     text-align: center; /* Keskendab tsitaadi konteineri */
-    max-width: 60%; /* Piirab konteineri laiuse */
+    max-width: 40%; /* Piirab konteineri laiuse */
     margin: 20px auto; /* Keskendab ja lisab ruumi ümber */
     padding: 15px; /* Lisab sisemist ruumi */
     color: #ffffff; /* Diskreetne hall värv */
     font-family: "Georgia", serif; /* Lisab elegantse serif-stiili */
     font-style: italic; /* Tsitaadi stiililisus */
-    border-radius: 8px; /* Ümarad nurgad */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kerge vari konteinerile */
+    border-radius: 60px; /* Ümarad nurgad */
+    background: linear-gradient(200deg, #0e0c36, #2b1717); /* Gradient taustavärv */
+    
+    border: 3px solid #0d0d0d; /* Peaaegu must ääris */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Lisab tumeda varju */
+
 }
+
+
+
 
 
 
 /* Footer styles */
-footer {
+#footer {
     background-color: #333;
     text-align: center;
-    padding: 1rem;
-    position: fixed; /* Paigaldab footeri alati lehe alla */
-    bottom: 0; /* Asub ekraani alumises servas */
-    left: 0; /* Hoiab footeri vasakus servas */
-    width: 100%; /* Täidab kogu ekraani laiuselt */
-    color: #fff; /* Muudab teksti värvi heledamaks, et olla loetav */
-    z-index: 1000; /* Veendub, et footer oleks ülejäänud sisu kohal */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 40px;
 }
+
 
 /* Main content */
 .content {
@@ -69,28 +113,72 @@ footer {
     margin-bottom: 10%;
 }
 
+#all_tracks {
+    background: linear-gradient(180deg,#141414,#000000, #0c0c0c);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom:10% ;
+  
+}
 
+
+#releases {
+   
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+#all_tracks{
+    margin-top: 20%;
+}
 
 #tracks {
     margin: 0 auto; /* Keskendab kogu #tracks konteineri horisontaalselt */
-    border: solid 2px white;
+    border: solid 2px rgb(47, 47, 47);
+    border-radius: 10px;
     max-width: 80%; /* Seab maksimaalse laiuse */
+    background: linear-gradient(300deg, #000000, #1b0428, #000000);
     text-align: center; /* Keskendab sees olevad elemendid */
     padding: 5px;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 15%;
+    width: 100%;
+    height: 50%;
+
+}
+
+#tracks2 {
+    margin: 0 auto; /* Keskendab kogu #tracks konteineri horisontaalselt */
+    border: solid 2px rgb(47, 47, 47);
+    border-radius: 10px;    max-width: 80%; /* Seab maksimaalse laiuse */
+    background: linear-gradient(100deg, #000000, #031e06, #000000);
+    text-align: center; /* Keskendab sees olevad elemendid */
+    padding: 5px;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    width: 100%;
+    height: 50%;
 
 }
 
 
 
+
 .track {
     justify-content: center;
+
 }  
+
 
 #eurlexa_header {
     text-align: center;
     margin-top: 15px;
+    margin: 15px;
 }
 
 #soundcloud-container {
@@ -101,9 +189,9 @@ footer {
 }
 
 #soundcloud-container iframe {
-    width: 100%;
+    width: 80%;
     max-width: 90%; /* Et iframe ei läheks laiemaks kui konteiner */
-    height: 166px;
+    height: 164px; /* Määrab kõrguse */
     border: none;
     margin-bottom: 20px; /* Lisab rohkem vahet iframe ja järgmise elemendi vahel */
 
